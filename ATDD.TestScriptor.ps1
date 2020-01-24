@@ -31,7 +31,7 @@ function Create-DestFile
 
 $SourcePath = $PSScriptRoot + '\'
 $DestPath = $PSScriptRoot + '\Output\'
-$SourceFile = "LookupValue.xlsx"
+$SourceFile = "ATDD.Scenarios.xlsx"
 $SheetName = "ATDD Scenarios"
 $ObjectID = 50100
 
