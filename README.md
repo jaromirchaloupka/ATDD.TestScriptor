@@ -4,11 +4,11 @@ This repository extends the original [ATDD.TestScriptor](https://github.com/flux
 
 The ATDD pattern is defined by so called tags:
 
-*	FEATURE: defines what feature(s) the test or collection of test cases is testing
-*	SCENARIO: defines for a single test the scenario being teste
-*	GIVEN: defines what data setup is needed; a test case can have multiple GIVEN tags when data setup is more complex
-*	WHEN: defines the action under test; each test case should have only one WHEN tag
-*	THEN: defines the result of the action, or more specifically the verification of the result; if multiple results apply, multiple THEN tags will be needed
+*	**FEATURE**: defines what feature(s) the test or collection of test cases is testing
+*	**SCENARIO**: defines for a single test the scenario being teste
+*	**GIVEN**: defines what data setup is needed; a test case can have multiple GIVEN tags when data setup is more complex
+*	**WHEN**: defines the action under test; each test case should have only one WHEN tag
+*	**THEN**: defines the result of the action, or more specifically the verification of the result; if multiple results apply, multiple THEN tags will be needed
 
 ## Installation instructions
 Type either of the following in a PowerShell prompt:
@@ -62,4 +62,4 @@ These `.ps1` files will be then processed by the  [ATDD.TestScriptor](https://ww
 - `LookupValueContact.al`
 - `LookupValueReport.al`
 
-After that you can finally copy the `.al` Test Codeunits into your solution and write Testing logic.
+After that you can finally copy the `.al` Test Codeunits into your solution and write Testing logic. The idea behind that feature is to create ATDD Scenarios in `ATDD.Scenarios.xlsx` file and then only to run `ATDD.TestScriptor.ps1` script and copy the generated `.al` Test Codeunits into your solution and write your own Test logic into the generated Test Functions. 
