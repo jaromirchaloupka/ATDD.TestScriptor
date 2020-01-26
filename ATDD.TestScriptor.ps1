@@ -6,7 +6,7 @@
 #
 
 
-function Create-DestFile
+function New-TestFile
 {
     $DestFile = $DestPath + $Feature + '_' + $SubFeature + '.ps1'    
     $ALFile = ($Feature + $SubFeature) -replace '\s',''
@@ -59,7 +59,7 @@ For ($i=2; $i -lt $RowCount; $i++)
              $Features += '    }' + "`n"
              $Features += '}' + "`n"
              $LastScenarioNo = 0
-             Create-DestFile
+             New-TestFile
              $Features = @()
              $ObjectID += 1 
         }
@@ -91,7 +91,7 @@ For ($i=2; $i -lt $RowCount; $i++)
     {
         $Features += '    }' + "`n"
         $Features += '}' + "`n"
-        Create-DestFile
+        New-TestFile
         $Features = @()
         $ObjectID += 1  
     }
