@@ -52,14 +52,14 @@ Once `ATDD.TestScriptor.ps1` script is executed then the following `.ps1` files 
 
 These `.ps1` files will be then processed by the  [ATDD.TestScriptor](https://www.powershellgallery.com/packages/ATDD.TestScriptor/0.0.7) module in order to  construct the skeleton of the associated `.al` Test Codeunits stored in `Output\.al` folder:
 
-- `LookupValueUTCustomer.al`
-- `LookupValueUTSalesDocument.al`
-- `LookupValueUTCustomerTemplate.al`
-- `LookupValueWarehouseShipment.al`
-- `LookupValueSalesArchive.al`
-- `LookupValueInheritance.al`
-- `LookupValuePosting.al`
-- `LookupValueContact.al`
-- `LookupValueReport.al`
+- `LookupValueUTCustomer.Cod.al`
+- `LookupValueUTSalesDocument.Cod.al`
+- `LookupValueUTCustomerTemplate.Cod.al`
+- `LookupValueWarehouseShipment.Cod.al`
+- `LookupValueSalesArchive.Cod.al`
+- `LookupValueInheritance.Cod.al`
+- `LookupValuePosting.Cod.al`
+- `LookupValueContact.Cod.al`
+- `LookupValueReport.Cod.al`
 
 After that you can finally copy the `.al` Test Codeunits into your solution and write Testing logic. The idea behind that feature is to create ATDD Scenarios in `ATDD.Scenarios.xlsx` file and then only to run `ATDD.TestScriptor.ps1` script and copy the generated `.al` Test Codeunits into your solution and write your own Test logic into the generated Test Functions. 

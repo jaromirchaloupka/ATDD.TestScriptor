@@ -10,7 +10,7 @@ function Create-DestFile
 {
     $DestFile = $DestPath + $Feature + '_' + $SubFeature + '.ps1'    
     $ALFile = ($Feature + $SubFeature) -replace '\s',''
-    $DestALFile = $DestPath + '.al\' + $ALFile +'.al'
+    $DestALFile = $DestPath + '.al\' + $ALFile +'.Cod.al'
 
     $Output = 'Install-Module -Name ATDD.TestScriptor' + "`n" +
               '$Features = @()' + "`n" +
